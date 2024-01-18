@@ -1,0 +1,86 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<View
+  style={
+    [
+      {
+        "alignItems": "stretch",
+        "backgroundColor": "#FFFFFF",
+        "padding": 5,
+        "width": "100%",
+      },
+      {
+        "borderColor": "#ced4da",
+        "borderRadius": 5,
+        "borderStyle": "solid",
+        "borderWidth": 1,
+        "color": "grey",
+        "direction": "ltr",
+        "marginBottom": 10,
+        "padding": 0,
+      },
+    ]
+  }
+>
+  <View
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": undefined,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
+    accessibilityValue={
+      {
+        "max": undefined,
+        "min": undefined,
+        "now": undefined,
+        "text": undefined,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      {
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+        "opacity": 1,
+        "overflow": "hidden",
+      }
+    }
+  >
+    <Text>
+      TITLE
+    </Text>
+  </View>
+  <View
+    style={
+      [
+        {},
+        {
+          "height": 0,
+          "padding": 0,
+          "paddingBottom": 0,
+          "paddingLeft": 0,
+          "paddingRight": 0,
+          "paddingTop": 0,
+        },
+        {
+          "overflow": "hidden",
+        },
+      ]
+    }
+  />
+</View>
+`;
