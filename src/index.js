@@ -91,7 +91,10 @@ let title = <>
 
 let previousIsOpen = null;
 
-function Accordion({title, style, children, open, arrow, duration, visible, onPress, onOpened}){
+function Accordion({title, style, children, open, arrow, duration, visible, display, onPress, onOpened}){
+
+    if( display !== undefined && !display)
+        return null;
 
     const [inlineStyle, setInlineStyle] = useState(Object.assign({}, style));
     const [isOpen, setIsOpen] = useState(visible !== undefined ? visible : false);
