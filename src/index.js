@@ -38,6 +38,9 @@ const styles = StyleSheet.create({
         justifyContent: 'space-around',
         padding: 10,
     },
+    arrow: {
+        paddingTop: 17
+    }
 });
 const toggleAnimation = duration => {
     return {
@@ -176,10 +179,10 @@ function Accordion({title, style, children, open, arrow, duration, visible, disp
 
             if (isOpen) {
 
-                return <Entypo name="arrow-with-circle-down" size={26} color="black" style={{paddingTop: 17}}/>;
+                return <Entypo name="arrow-with-circle-down" size={26} color="black" style={style.arrow}/>;
             }
 
-            return <Entypo name="arrow-with-circle-right" size={26} color="black" style={{paddingTop: 17}}/>;
+            return <Entypo name="arrow-with-circle-right" size={26} color="black" style={style.arrow}/>;
         }
         return null;
     };
