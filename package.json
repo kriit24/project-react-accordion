@@ -1,6 +1,6 @@
 {
   "name": "project-react-accordion",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Project Accordion Helper",
   "main": "src/index.js",
   "react-native": "src/index.js",

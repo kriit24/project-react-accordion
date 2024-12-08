@@ -17,7 +17,7 @@ const styles = StyleSheet.create({
         width: "100%",
         backgroundColor: '#FFFFFF',
     },
-    hidden: {
+    list_hidden: {
         height: 0,
         padding: 0,
         paddingTop: 0,
@@ -25,6 +25,7 @@ const styles = StyleSheet.create({
         paddingBottom: 0,
         paddingLeft: 0,
     },
+    list_visible: {},
     accordion: {},
     heading: {},
     list: {},
@@ -189,7 +190,7 @@ function Accordion({title, style, children, open, arrow, duration, visible, disp
                 {typeof title === 'string' ? <Text>{title}</Text> : title}
                 <ArrowBtn/>
             </TouchableOpacity>
-            <View style={[style.list, !isOpen ? style.hidden : undefined, {overflow: 'hidden'}]}>
+            <View style={[style.list, !isOpen ? style.list_hidden : style.list_visible, {overflow: 'hidden'}]}>
                 {isOpen ? (isVisible ? children : <Loader/>) : null}
             </View>
         </View>
